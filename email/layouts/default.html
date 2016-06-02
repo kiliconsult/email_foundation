@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--suppress HtmlUnknownTag -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- Inject the compiled styling-->
+    <!-- inject-style src="temp/css/mail.css" -->
+</head>
+
+<body>
+<!-- <style> -->
+<table class="body" data-made-with-foundation>
+    <tr>
+        <td class="center" align="center" valign="top">
+            <center>
+                <wrapper class="show-for-large">
+                    <spacer size="16"></spacer>
+                </wrapper>
+
+                <container>
+                    <!-- HEADER -->
+                    <responsive-row>
+                        <row>
+                            <columns small="3" large="6">
+                                <img src="http://placehold.it/350x75" alt="Logo">
+                            </columns>
+                            <columns small="9" large="6">
+                                <h3  class="text-right no-margin">${ctx.subject}</h3>
+                            </columns>
+                        </row>
+                    </responsive-row>
+                    <!-- /HEADER -->
+
+                    <hr class="no-margin">
+
+                    <!-- BODY -->
+                    {{> body}}
+                    <!-- /BODY -->
+
+                    <hr class="no-margin">
+
+                    <!-- FOOTER -->
+                    <responsive-row class="footer">
+                        <spacer size="20"></spacer>
+                        <table class="row">
+                            <tr>
+                                <td valign="middle" style="vertical-align: middle;"
+                                    class="large-6 first columns">
+                                    <p class="text-center">
+                                        <small>Kiliit IVS</small>
+                                    </p>
+                                </td>
+                                <td valign="middle" style="vertical-align: middle;"
+                                    class="large-6 last columns">
+                                    <p class="text-center">
+                                        <small>CVR 36978260</small>
+                                    </p>
+                                </td>
+                                <!-- Column -->
+                                <td class="expander"></td>
+                            </tr>
+                        </table>
+                        <spacer size="20"></spacer>
+                    </responsive-row>
+                    <!-- /FOOTER -->
+                </container>
+
+                <wrapper class="show-for-large">
+                    <spacer size="16"></spacer>
+                </wrapper>
+            </center>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

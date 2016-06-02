@@ -1,0 +1,28 @@
+@import 'settings';
+@import 'foundation/foundation';
+
+small {
+  line-height: $small-line-height;
+}
+
+.no-margin {
+  // Do not optimize margins
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+h3 {
+  margin-bottom: $row-padding;
+}
+
+table.row.unpadded-sides {
+  table.row th.first {
+    padding-left: 0 !important;
+  }
+
+  table.row th.last {
+    padding-right: 0 !important;
+  }
+}
